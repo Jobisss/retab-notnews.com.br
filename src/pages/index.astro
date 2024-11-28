@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
+import Power from '../components/power'
 const items = ['gobs', 'ligdh', 'mitches']
 const visible = true
 ---
@@ -11,4 +12,5 @@ const visible = true
             visible && <p>{item}</p>
         ) )
     }
+    <Power nome='teste' startCounter={3}></Power>
 </BaseLayout>
